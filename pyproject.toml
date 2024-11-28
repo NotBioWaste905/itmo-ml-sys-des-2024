@@ -11,6 +11,10 @@ python = "^3.8"
 black = "^24.2.0"
 ruff = "^0.3.0"
 
+[tool.poetry.scripts]
+format = "black.__main__:main"
+lint = "ruff._cli:main"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
